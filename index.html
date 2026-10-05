@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cassie | Program and project management</title>
+<meta name="description" content="Program and project manager with a background in operations and academic publishing, based in California.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f6f7f8;
+    --ink: #1e2128;
+    --muted: #596070;
+    --line: #dcdfe5;
+    --teal: #94d6cb;
+    --yellow: #f3e08f;
+    --green: #a4d9b8;
+    --blue: #a6c4f0;
+    --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+    --sans: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 1.0625rem/1.65 var(--sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Soft watercolor washes: the one decorative element */
+  .wash { position: absolute; inset: 0 0 auto 0; height: 46rem; overflow: hidden; z-index: 0; pointer-events: none; }
+  .wash i {
+    position: absolute; border-radius: 50%;
+    filter: blur(70px); opacity: .7;
+    animation: drift 24s ease-in-out infinite alternate;
+  }
+  .wash i:nth-child(1) { width: 30rem; height: 26rem; background: var(--teal);   top: -6rem;  right: -4rem; }
+  .wash i:nth-child(2) { width: 26rem; height: 22rem; background: var(--yellow); top: 6rem;   right: 14rem; animation-delay: -8s; }
+  .wash i:nth-child(3) { width: 28rem; height: 24rem; background: var(--green);  top: 12rem;  right: -8rem; animation-delay: -4s; }
+  .wash i:nth-child(4) { width: 22rem; height: 20rem; background: var(--blue);   top: 2rem;   right: 26rem; animation-delay: -12s; }
+  @keyframes drift { to { transform: translate(-2.5rem, 2rem) scale(1.08); } }
+  @media (prefers-reduced-motion: reduce) { .wash i { animation: none; } }
+
+  main { position: relative; z-index: 1; max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+  header { padding-top: 5.5rem; min-height: 28rem; }
+  h1 {
+    font: 400 clamp(4rem, 14vw, 7.5rem)/0.95 var(--serif);
+    letter-spacing: -0.02em;
+    margin: 0 0 1.5rem;
+  }
+  .stance {
+    font: italic 400 clamp(1.5rem, 4vw, 2.1rem)/1.25 var(--serif);
+    max-width: 30rem;
+    margin: 0;
+  }
+
+  section { margin-top: 3.5rem; }
+  h2 { font: 400 1.75rem/1.2 var(--serif); margin: 0 0 1rem; }
+  p { margin: 0 0 1.1rem; max-width: 38rem; }
+  a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: var(--muted); }
+  a:hover { text-decoration-color: var(--ink); }
+  a:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; border-radius: 2px; }
+
+  .project { border-top: 1px solid var(--line); padding: 1.25rem 0; max-width: 38rem; }
+  .project:last-child { border-bottom: 1px solid var(--line); }
+  .project h3 { font: 600 1.05rem/1.4 var(--sans); margin: 0 0 .25rem; }
+  .project p { margin: 0; color: var(--muted); }
+
+  nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+  footer { margin-top: 4rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<div class="wash" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<main id="main">
+  <header>
+    <h1>Cassie</h1>
+    <!-- EDIT: add your last name to the h1 and <title> if you want it searchable -->
+    <p class="stance">I want projects to deliver what they promise, for the people who rely on them and for the planet.</p>
+  </header>
+
+  <section aria-labelledby="about">
+    <h2 id="about">About</h2>
+    <p>I'm a program and project manager with a background in operations and academic publishing. I'm based in California and open to program management roles in the San Francisco Bay Area.</p>
+    <p>Most recently I was IT Officer at a small architecture firm in Amsterdam, where I ran day-to-day IT operations and supported a team of designers. Before that, I worked in academic publishing and operations.</p>
+    <p>Outside of work, I volunteer with the Sustainability Community of Action (SCoA), a volunteer-led group within the PMI UK Chapter focused on sustainable project management.</p>
+  </section>
+
+  <section aria-labelledby="projects">
+    <h2 id="projects">Projects</h2>
+    <div class="project">
+      <h3>SCoA Sustainability Summit</h3>
+      <p>I lead marketing and promotion for SCoA's annual Sustainability Summit. <!-- EDIT: add one concrete result, e.g. registrations, speakers booked, channels used --></p>
+    </div>
+    <div class="project">
+      <h3>Amsterdam IT operations</h3>
+      <p>Ran IT for a small architecture practice. <!-- EDIT: add one concrete result, e.g. a migration, a cost saved, a process you simplified --></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">Elsewhere</h2>
+    <nav aria-label="Links">
+      <ul>
+        <!-- EDIT: replace each # with your real link -->
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="mailto:you@example.com">Email</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <footer>&copy; 2026 Cassie</footer>
+</main>
+</body>
+</html>
